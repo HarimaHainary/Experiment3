@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navigation Bar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">MyWebsite</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="hamburger">&#9776;</div>
+  </nav>
+
+  <script>
+    // Toggle hamburger menu
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+    <section style="padding: 60px; text-align: center;">
+      <h1>Welcome to My Website</h1>
+      <p>This is a demo page with a responsive navigation bar.</p>
+    </section>
+    
+    <section style="padding: 60px; text-align: center; background: #f4f4f4;">
+      <h2>About Me</h2>
+      <p>This project is part of my journey to understand web development.</p>
+    </section>
+    
+    <section style="padding: 60px; text-align: center;">
+      <h2>Services</h2>
+      <p>This website will showcase my small projects and experiments in web development. I provide examples, code snippets and simple demos as part of my learning</p>
+    </section>
+</body>
+</html>
